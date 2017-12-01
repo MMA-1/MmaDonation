@@ -5,7 +5,7 @@
     android:id="@+id/activity_condition"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.ConditionActivity">
+    tools:context=".ConditionActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

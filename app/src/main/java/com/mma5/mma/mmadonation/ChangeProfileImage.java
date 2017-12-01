@@ -16,17 +16,19 @@ import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
 import org.ksoap2.SoapEnvelope;
 import org.ksoap2.serialization.SoapObject;
 import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
-import static in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity.MyPREFERENCES;
-import static in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity.SessionStatus;
-import static in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity.UserContact;
-import static in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity.UserId;
-import static in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity.UserName;
+import static com.mma5.mma.mmadonation.LoginActivity.MyPREFERENCES;
+import static com.mma5.mma.mmadonation.LoginActivity.SessionStatus;
+import static com.mma5.mma.mmadonation.LoginActivity.UserContact;
+import static com.mma5.mma.mmadonation.LoginActivity.UserId;
+import static com.mma5.mma.mmadonation.LoginActivity.UserName;
+
 
 public class ChangeProfileImage extends AppCompatActivity {
     String TAG = "MMA Response";

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient_color"
-    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.ChangeProfileImage">
+    tools:context=".ChangeProfileImage">
     <RelativeLayout
         android:id="@+id/headerStrip"
         android:layout_width="match_parent"

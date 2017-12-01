@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gradient_color"
-    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.DonationSingle">
+    tools:context=".DonationSingle">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
