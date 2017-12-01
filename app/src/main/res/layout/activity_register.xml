@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@drawable/background_gradient_color"
+    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.RegisterActivity">
+   <LinearLayout
+       android:id="@+id/headerStrip"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:src="@drawable/headerstrip1"
+           android:layout_width="fill_parent"
+           android:layout_height="67dp"
+           android:scaleType="fitXY"
+           android:id="@+id/tvGotoHome"
+           />
+   </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerStrip">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtUserName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Unique UserId"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_below="@+id/txtUserName"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/txtName"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtFatherName"
+        android:layout_below="@+id/txtName"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Father Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtFatherName"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtMotherName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Mother Name"
+        android:inputType="textPersonName" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:layout_height="36dp"
+        android:id="@+id/spnrGender"
+        android:entries="@array/Gender"
+        android:layout_below="@+id/txtMotherName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/spinner_item_border"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/spnrGender"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtUserContact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="10 digit Mobile number" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:layout_height="36dp"
+        android:id="@+id/spnrReligion"
+        android:layout_below="@+id/txtUserContact"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/spinner_item_border"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/spnrReligion"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtUserEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress" />
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:textSize="12dp"
+        android:layout_height="36dp"
+        android:id="@+id/spnrOccupation"
+        android:layout_below="@+id/txtUserEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/spinner_item_border"
+        />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/txtAddress"
+        android:hint="Address"
+        android:layout_below="@+id/spnrOccupation"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtAddress"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtPincode"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Pincode" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtPincode"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtPassword"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorHintColor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtConfirmPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/txtConfirmPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_gradient"
+        android:text="Register"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/txtMotherName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/errorGender"
+        android:enabled="true"
+        />
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:layout_below="@+id/txtUserEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/errOccupation"
+        android:enabled="true"/>
+
+    <EditText
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:layout_below="@+id/txtUserContact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/errReligion"
+        android:enabled="true"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

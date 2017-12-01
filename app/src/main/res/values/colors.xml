@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGray40">#cccccc</color>
+    <color name="colorGray100">#939393</color>
+    <color name="colorHintColor">#939393</color>
+    <color name="colorFooterMenu">#003141</color>
+    <color name="colorPasswordBackground">#072733</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorTeal900">#004D40</color>
+    <color name="colorTeal500">#009688</color>
+    <color name="colorTeal300">#4DB6AC</color>
+    <color name="colorBlueGrey800">#37474F</color>
+    <color name="colorBlueGrey500">#607D8B</color>
+    <color name="colorBlueGrey200">#B0BEC5</color>
+    <color name="colorGreen900">#1B5E20</color>
+    <color name="colorGreen500">#4CAF50</color>
+    <color name="colorGreen300">#81C784</color>
+
 </resources>

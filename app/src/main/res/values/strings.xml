@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">MmaDonation</string>
+    <string name="app_name">KJNaqvi</string>
+    <string-array name="ReligionMaster">
+        <item>Select Religion</item>
+        <item>Muslim</item>
+        <item>Non-Muslim</item>
+    </string-array>
+    <string-array name="OccupationMaster">
+        <item>Select Occupation</item>
+        <item>Business</item>
+        <item>Private Job</item>
+        <item>Government Job</item>
+    </string-array>
+    <string-array name="UserType">
+        <item>Select Type</item>
+        <item>Donor</item>
+        <item>Member</item>
+        <item>Receiver</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="IsSyed">
+        <item>Non-Syed</item>
+        <item>Syed</item>
+    </string-array>
+    <string-array name="KhumsType">
+        <item>SAHAM-E-IMAM</item>
+        <item>SAHAM-E-SADAT</item>
+        <item>BOTH</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
 </resources>

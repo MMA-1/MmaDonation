@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_color"
+    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.ChangeProfileImage">
+    <RelativeLayout
+        android:id="@+id/headerStrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/tvGotoHome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/headerstrip1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/middleSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/lblUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="User Name "
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/lblUserContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblUserName"
+            android:layout_centerHorizontal="true"
+            android:text="9999999999"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+        <in.amrtechnologies.kjnaqvi.kjnaqvi.RoundedImageView
+            android:id="@+id/imageView_round"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_centerHorizontal="true"
+           android:layout_below="@+id/lblUserContact"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnImageFromGallary"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/galleryicon" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/takephotoicon" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/removeprofilepicture" />
+    </RelativeLayout>
+</RelativeLayout>

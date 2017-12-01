@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_donate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_gradient_color"
+    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.DonateKhumsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbar_gradient_color"
+        android:id="@+id/toolbarStrip">
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarIcon"
+            android:src="@drawable/toolbaricon"/>
+        <in.amrtechnologies.kjnaqvi.kjnaqvi.RoundedImageView
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/userImage"
+            android:src="@drawable/demouser"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarStrip"
+        android:id="@+id/usernameLayout">
+        <TextView
+            android:text="UserId - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblUserName" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUserName"
+            android:padding="2dp"
+            android:textColor="@color/colorBlueGrey200"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLayout"
+        android:layout_below="@+id/usernameLayout">
+        <TextView
+            android:text="Name - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblName" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:padding="2dp"
+            android:textColor="@color/colorBlueGrey200"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactLayout"
+        android:layout_below="@+id/nameLayout">
+        <TextView
+            android:text="Contact - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblContact" />
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContact"
+            android:padding="2dp"
+            android:textColor="@color/colorBlueGrey200"
+            android:textSize="18dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/issyedLayout"
+        android:layout_below="@+id/contactLayout">
+        <TextView
+            android:text="I am - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblIsSyed" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:layout_height="36dp"
+            android:id="@+id/spnrIsSyed"
+            android:entries="@array/IsSyed"
+            android:background="@drawable/spinner_item_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/khumsTypeLayout"
+        android:layout_below="@+id/issyedLayout">
+        <TextView
+            android:text="Khums Type - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblKumsType" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:layout_height="36dp"
+            android:id="@+id/spnrKhumsType"
+            android:entries="@array/KhumsType"
+            android:background="@drawable/spinner_item_border"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountLayout"
+        android:layout_below="@+id/khumsTypeLayout">
+        <TextView
+            android:text="Amount - "
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:id="@+id/lblAmount" />
+
+        <EditText
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceedLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/amountLayout">
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"
+            android:layout_centerInParent="true"
+            android:text="Proceed To Pay"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

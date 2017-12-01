@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="in.amrtechnologies.kjnaqvi.kjnaqvi.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:id="@+id/rltvTop">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prlx1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/txtUserContact"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Registered Mobile Number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prlx1"
+        android:id="@+id/prlx2">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@+id/txtUserContact"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/txtPassword"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rltvMiddle"
+        android:layout_below="@+id/rltvTop"
+        >
+    <Button
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+        />
+
+    <TextView
+        android:text="Register Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvRegisterHere" />
+
+        <TextView
+            android:text="Go To Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRegisterHere"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/colorTeal500"
+            android:id="@+id/tvGotoHome" />
+
+        <TextView
+            android:text="Go To Passwword Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGotoHome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/colorTeal500"
+            android:id="@+id/tvPassLogin" />
+        <TextView
+            android:text="Go To Enter Mobile no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPassLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/colorTeal500"
+            android:id="@+id/tvMobileLogin" />
+        <TextView
+            android:text="Change Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMobileLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/colorTeal500"
+            android:id="@+id/tvChangeImage" />
+        <TextView
+            android:text="Navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChangeImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textColor="@color/colorTeal500"
+            android:id="@+id/mainnavigation" />
+    </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
