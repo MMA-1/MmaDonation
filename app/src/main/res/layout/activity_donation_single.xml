@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/toolbarIcon"
             android:src="@drawable/toolbaricon"/>
-        <in.amrtechnologies.kjnaqvi.kjnaqvi.RoundedImageView
+        <com.mma5.mma.mmadonation.RoundedImageView
             android:layout_width="51dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
